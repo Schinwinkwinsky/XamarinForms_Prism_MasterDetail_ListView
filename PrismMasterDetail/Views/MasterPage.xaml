@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:PrismMasterDetail.Views"
+             xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms" 
+             mc:Ignorable="d"
+             x:Class="PrismMasterDetail.Views.MasterPage">
+
+    <ContentPage.Content>
+        <ListView x:Name="listView"
+                  ItemSelected="ListView_ItemSelected"
+                  SeparatorVisibility="None">
+            <ListView.Behaviors>
+                <behaviors:EventToCommandBehavior EventName="ItemTapped" 
+                                                  Command="{Binding ItemTappedCommand}" 
+                                                  EventArgsParameterPath="Item"/>
+            </ListView.Behaviors>
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type views:MasterItem}">
+                    <views:MasterItem Title="Page A" Path="PageA"/>
+                    <views:MasterItem Title="Page B" Path="PageB"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding Title}" Margin="10"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+
+</ContentPage>
