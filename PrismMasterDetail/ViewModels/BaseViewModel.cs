@@ -9,6 +9,8 @@ namespace PrismMasterDetail.ViewModels
 {
     public class BaseViewModel : BindableBase, INavigationAware
     {
+        protected bool _isLogged;
+
         private string title;
         public string Title
         {
@@ -20,6 +22,8 @@ namespace PrismMasterDetail.ViewModels
 
         public BaseViewModel(INavigationService navigationService)
         {
+            _isLogged = false;
+
             _navigationService = navigationService;
         }
 

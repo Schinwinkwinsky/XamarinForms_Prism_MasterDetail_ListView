@@ -25,10 +25,10 @@ namespace PrismMasterDetail
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
 
+            containerRegistry.RegisterForNavigation<AccountPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainViewModel>();
             containerRegistry.RegisterForNavigation<MasterPage>();
-            containerRegistry.RegisterForNavigation<PageA>();
-            containerRegistry.RegisterForNavigation<PageB>();
+            containerRegistry.RegisterForNavigation<SignInPage, SignInViewModel>();
         }
     }
 }

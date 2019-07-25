@@ -19,8 +19,8 @@
             </ListView.Behaviors>
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type views:MasterItem}">
-                    <views:MasterItem Title="Page A" Path="PageA"/>
-                    <views:MasterItem Title="Page B" Path="PageB"/>
+                    <views:MasterItem Title="Promotions" Path="PromotionsPage"/>
+                    <views:MasterItem Title="Account" Path="AccountPage"/>
                 </x:Array>
             </ListView.ItemsSource>
             <ListView.ItemTemplate>

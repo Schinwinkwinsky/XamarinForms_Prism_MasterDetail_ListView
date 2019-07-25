@@ -15,7 +15,21 @@ namespace PrismMasterDetail.ViewModels
 
         private async void ItemTapped(MasterItem masterItem)
         {
-            await _navigationService.NavigateAsync("NavigationPage/" + masterItem.Path);
+            if (masterItem.Title.Equals("Account"))
+            {
+                if (_isLogged)
+                {
+                    await _navigationService.NavigateAsync("AccountPage");
+                }
+                else
+                {
+                    await _navigationService.NavigateAsync("SignInPage", useModalNavigation:true);
+                }
+            }
+            else
+            {
+                await _navigationService.NavigateAsync("NavigationPage/" + masterItem.Path);
+            }
         }
     }
 }

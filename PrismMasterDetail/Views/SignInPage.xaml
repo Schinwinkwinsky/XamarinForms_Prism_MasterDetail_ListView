@@ -4,11 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="PrismMasterDetail.Views.PageB"
-             Title="Page B">
+             x:Class="PrismMasterDetail.Views.SignInPage"
+             Title="Page A">
 
     <ContentPage.Content>
-        <Label Text="Page B" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Button Text="Cancel" 
+                Command="{Binding CancelCommand}" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"/>
     </ContentPage.Content>
     
 </ContentPage>

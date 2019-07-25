@@ -2,9 +2,9 @@
 
 namespace PrismMasterDetail.Views
 {
-    public partial class PageB : ContentPage
+    public partial class AccountPage : ContentPage
     {
-        public PageB()
+        public AccountPage()
         {
             InitializeComponent();
         }

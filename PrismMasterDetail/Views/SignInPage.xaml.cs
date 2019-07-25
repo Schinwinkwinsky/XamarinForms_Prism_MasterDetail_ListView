@@ -2,9 +2,9 @@
 
 namespace PrismMasterDetail.Views
 {
-    public partial class PageA : ContentPage
+    public partial class SignInPage : ContentPage
     {
-        public PageA()
+        public SignInPage()
         {
             InitializeComponent();
         }

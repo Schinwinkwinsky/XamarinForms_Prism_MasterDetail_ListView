@@ -4,11 +4,11 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="PrismMasterDetail.Views.PageA"
-             Title="Page A">
+             x:Class="PrismMasterDetail.Views.AccountPage"
+             Title="Page B">
 
     <ContentPage.Content>
-        <Label Text="Page A" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Label Text="Page B" HorizontalOptions="Center" VerticalOptions="Center"/>
     </ContentPage.Content>
     
 </ContentPage>
