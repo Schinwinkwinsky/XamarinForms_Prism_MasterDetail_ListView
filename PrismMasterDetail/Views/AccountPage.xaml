@@ -5,10 +5,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PrismMasterDetail.Views.AccountPage"
-             Title="Page B">
+             Title="Account">
 
     <ContentPage.Content>
-        <Label Text="Page B" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Label Text="Account Page" HorizontalOptions="Center" VerticalOptions="Center"/>
     </ContentPage.Content>
     
 </ContentPage>

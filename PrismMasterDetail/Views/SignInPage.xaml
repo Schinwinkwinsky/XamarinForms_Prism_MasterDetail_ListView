@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PrismMasterDetail.Views.SignInPage"
-             Title="Page A">
+             Title="Sign In">
 
     <ContentPage.Content>
         <Button Text="Cancel" 
