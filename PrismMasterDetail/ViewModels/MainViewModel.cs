@@ -19,11 +19,11 @@ namespace PrismMasterDetail.ViewModels
             {
                 if (_isLogged)
                 {
-                    await _navigationService.NavigateAsync("AccountPage");
+                    await _navigationService.NavigateAsync("NavigationPage/AccountPage");
                 }
                 else
                 {
-                    await _navigationService.NavigateAsync("SignInPage", useModalNavigation:true);
+                    await _navigationService.NavigateAsync("NavigationPage/SignInPage", useModalNavigation:true);
                 }
             }
             else
